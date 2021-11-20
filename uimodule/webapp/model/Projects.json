@@ -1,0 +1,58 @@
+{
+    "projects": [{
+            "name": "ABAP Logger",
+            "types": [
+                { "type": "ABAP" }
+            ],
+            "description": "Logging Framework",
+            "url": "https://github.com/franzreitmayer/ABAP_LOGGING"
+        },
+        {
+            "name": "TextType",
+            "types": [
+                { "type": "Java" },
+                { "type": "antlr" }
+            ],
+            "description": "Flatfile Table Editor",
+            "url": "http://texttable.aws.reitmayer.eu"
+        },
+        {
+            "name": "Timetrack",
+            "types": [
+                { "type": "AWS" },
+                { "type": "TS" },
+                { "type": "JS" },
+                { "type": "UI5" }
+            ],
+            "description": "Simple timetracking",
+            "url": "https://github.com/franzreitmayer/timetrack"
+        },
+        {
+            "name": "Landing Page",
+            "types": [
+                { "type": "JS" },
+                { "type": "UI5" }
+            ],
+            "description": "this landing page ;-)",
+            "url": "https://github.com/franzreitmayer/landingPage"
+        },
+        {
+            "name": "TextTool",
+            "types": [
+                {"type": "C#"},
+                {"type": "antlr"}
+            ],
+            "description": "",
+            "url": "https://github.com/franzreitmayer/TextTool"
+        },
+        {
+            "name": "ProxyBypass",
+            "types": [
+                {"type": "JS"}
+            ],
+            "description": "Bypassing Proxies",
+            "url": "https://github.com/franzreitmayer/proxyBypass"
+        }
+
+    ]
+}

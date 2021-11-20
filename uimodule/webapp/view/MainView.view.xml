@@ -1,15 +1,62 @@
 <mvc:View
     controllerName="eu.reitmayer.ui5.landingPage.controller.MainView"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:mydata="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
     displayBlock="true"
     xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
 >
     <Shell id="shell">
         <App id="app">
             <pages>
-                <Page id="page" title="{i18n>title}">
-                    <content />
-                </Page>
+                <f:DynamicPage id="page">
+                    <f:content>
+
+                        <Panel headerText="Personal WebSite of Franz Reitmayer">
+                            <Panel headerText="Public profiles">
+                            <VBox class="sapUiResponsiveMargin" alignItems="Center">
+
+
+                            <HBox justifyContent="SpaceAround" alignItems="Center" width="20em">
+                                <Image mydata:id="xing" src="../images/XNG_Sharebutton.png" width="4em" press="onSocialLink"/>
+                                <Image mydata:id="github" src="../images/GitHub_Logo.png" width="4em" press="onSocialLink" />
+                                <Image mydata:id="linkedin" src="../images/LI-Logo.png" width="4em" press="onSocialLink"/>
+                                <Image mydata:id="sdn" src="../images/sap-logo-svg.svg" width="4em" press="onSocialLink"/>
+                            </HBox>
+
+                        </VBox>
+                    </Panel>
+                    <!-- 
+                    <List items="{/projects}">
+                        <StandardListItem title="{name}" />
+                    </List>
+                    -->        
+                        <Panel headerText="Projects">
+                            <l:HorizontalLayout content="{/projects}" class="sapUiContentPadding" allowWrapping="true">
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{name}"  press="onProjectPress"
+                            subheader="{description}" url="{url}">
+                                <TileContent>
+                                    <l:HorizontalLayout content="{types}" allowWrapping="true" class="sapUiResponsiveMargin">
+                                    <Image width="2em" src="{
+                                        path: 'type',
+                                        formatter: '.formatter.projectTypeImageURL'
+                                    }" />
+                                </l:HorizontalLayout>
+                                </TileContent>
+                        </GenericTile>
+
+                        </l:HorizontalLayout>
+                                
+                            </Panel>
+                            <Link text="Impressum" href="./impressum.html" />
+                        </Panel>
+                        
+                    </f:content>
+                    <f:footer>
+                        <Link text="Impressum" href="./impressum.html" />
+                    </f:footer>
+                </f:DynamicPage>
             </pages>
         </App>
     </Shell>

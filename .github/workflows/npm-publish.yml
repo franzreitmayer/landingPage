@@ -24,5 +24,7 @@ jobs:
           node-version: 14
       - name: "Install ui5 command line tooling"
         run: npm i -g @ui5/cli
+      - name: "Npm install"
+        run: npm i
       - name: "Build"
         run: npm run build:uimodule

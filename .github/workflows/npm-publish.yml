@@ -15,7 +15,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
-      - run: npm run build:uimodule
+      - name: "Build UI5"
+        run: npm run build:uimodule
   	  
 
 

@@ -1,0 +1,108 @@
+{
+    "projects": [{
+            "name": "ABAP Logger",
+            "types": [
+                { "type": "ABAP" }
+            ],
+            "description": "Simple Logging Framework for SAP ABAP",
+            "url": "https://github.com/franzreitmayer/ABAP_LOGGING"
+        },
+        {
+            "name": "TextType",
+            "types": [
+                { "type": "Java" },
+                { "type": "antlr" }
+            ],
+            "description": "Flatfile Table Editor",
+            "url": "http://texttable.aws.reitmayer.eu"
+        },
+        {
+            "name": "Timetrack",
+            "types": [
+                { "type": "AWS" },
+                { "type": "TS" },
+                { "type": "JS" },
+                { "type": "UI5" }
+            ],
+            "description": "Simple timetracking",
+            "url": "https://github.com/franzreitmayer/timetrack"
+        },
+        {
+            "name": "Landing Page",
+            "types": [
+                { "type": "JS" },
+                { "type": "UI5" }
+            ],
+            "description": "this landing page ;-)",
+            "url": ""
+        },
+        {
+            "name": "test2",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test3",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test2",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test3",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test2",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test3",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test2",
+            "type": "",
+            "description": "",
+            "url": ""
+        },
+        {
+            "name": "test3",
+            "type": "",
+            "description": "",
+            "url": ""
+        }
+
+
+    ]
+}

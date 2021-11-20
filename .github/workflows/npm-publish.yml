@@ -18,4 +18,4 @@ jobs:
         with:
           node-version: 14
       - name: "Build"
-        run: npm run install
+        rn: npm run install

@@ -14,6 +14,7 @@ sap.ui.define([
 
             },
 
+            
             onSocialLink: function(oEvent) {
                 var sSocialMediaId = oEvent.getSource().data("id");
                 var oResourceBundle = this.getResourceBundle();

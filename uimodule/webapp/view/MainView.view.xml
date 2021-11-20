@@ -1,6 +1,7 @@
 <mvc:View
     controllerName="eu.reitmayer.ui5.landingPage.controller.MainView"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:mydata="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
     displayBlock="true"
     xmlns="sap.m"
 >
@@ -8,7 +9,21 @@
         <App id="app">
             <pages>
                 <Page id="page" title="{i18n>title}">
-                    <content />
+                    <content>
+                        <ObjectHeader 
+                            title="Franz Reitmayer"
+                            backgroundDesign="solid">
+
+                        </ObjectHeader>
+
+                            <HBox justifyContent="SpaceAround" alignItems="Center" width="27em">
+                            <Image mydata:id="github" src="../images/GitHub_Logo.png" width="5em" press="onSocialLink" />
+                            <Image mydata:id="xing" src="../images/XNG_Sharebutton.png" width="5em" />
+                            <Image mydata:id="linkedin" src="../images/LI-Logo.png" width="5em" />
+                            <Image mydata:id="sdn" src="../images/sap-logo-svg.svg" width="5em" />
+                        </HBox>
+                       
+                    </content>
                 </Page>
             </pages>
         </App>

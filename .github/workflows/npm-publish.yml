@@ -31,6 +31,7 @@ jobs:
       - name: "Sync files"
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
+          local-dir: "./uimodule/dist/"
           server: wp1155735.server-he.de
           username: ${{ secrets.FTP_UPLOAD_USER }}
           password: ${{ secrets.FTP_UPLOAD_PWD }}        

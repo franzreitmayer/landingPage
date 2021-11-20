@@ -18,4 +18,4 @@ jobs:
         with:
           node-version: 14
       - name: "Build"
-        run: npm run build:uimodule
+        run: npm run install

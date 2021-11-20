@@ -8,7 +8,7 @@
             "url": "https://github.com/franzreitmayer/ABAP_LOGGING"
         },
         {
-            "name": "TextType",
+            "name": "TextTable",
             "types": [
                 { "type": "Java" },
                 { "type": "antlr" }
@@ -22,7 +22,9 @@
                 { "type": "AWS" },
                 { "type": "TS" },
                 { "type": "JS" },
-                { "type": "UI5" }
+                { "type": "UI5" },
+                { "type": "SLS" },
+                { "type": "Auth0" }
             ],
             "description": "Simple timetracking",
             "url": "https://github.com/franzreitmayer/timetrack"
@@ -42,7 +44,7 @@
                 {"type": "C#"},
                 {"type": "antlr"}
             ],
-            "description": "",
+            "description": "Flatfile Table Editor",
             "url": "https://github.com/franzreitmayer/TextTool"
         },
         {

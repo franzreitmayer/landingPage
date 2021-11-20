@@ -37,7 +37,7 @@
                             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{name}"  press="onProjectPress"
                             subheader="{description}" url="{url}">
                                 <TileContent>
-                                    <l:HorizontalLayout content="{types}" allowWrapping="true" class="sapUiResponsiveMargin">
+                                    <l:HorizontalLayout content="{types}" allowWrapping="true" >
                                     <Image width="2em" src="{
                                         path: 'type',
                                         formatter: '.formatter.projectTypeImageURL'

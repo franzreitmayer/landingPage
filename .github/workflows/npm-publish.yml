@@ -11,10 +11,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Build UI5"
+        uses: actions/setup-node@v2
         with:
           node-version: 14
-      - name: "Build UI5"
+      - name: "Build"
         run: npm run build:uimodule
-

@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+  release: [created]
 
 jobs:
   build:
@@ -19,4 +20,4 @@ jobs:
         with:
           node-version: 14
       - name: "Build"
-        run: npm run install
+        run: npm run build:uimodule

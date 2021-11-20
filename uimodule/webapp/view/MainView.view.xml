@@ -49,9 +49,13 @@
                         </l:HorizontalLayout>
                                 
                             </Panel>
+                            <Link text="Impressum" href="./impressum.html" />
                         </Panel>
-
+                        
                     </f:content>
+                    <f:footer>
+                        <Link text="Impressum" href="./impressum.html" />
+                    </f:footer>
                 </f:DynamicPage>
             </pages>
         </App>

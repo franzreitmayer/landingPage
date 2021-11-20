@@ -4,7 +4,7 @@
             "types": [
                 { "type": "ABAP" }
             ],
-            "description": "Simple Logging Framework for SAP ABAP",
+            "description": "Logging Framework",
             "url": "https://github.com/franzreitmayer/ABAP_LOGGING"
         },
         {
@@ -34,75 +34,25 @@
                 { "type": "UI5" }
             ],
             "description": "this landing page ;-)",
-            "url": ""
+            "url": "https://github.com/franzreitmayer/landingPage"
         },
         {
-            "name": "test2",
-            "type": "",
+            "name": "TextTool",
+            "types": [
+                {"type": "C#"},
+                {"type": "antlr"}
+            ],
             "description": "",
-            "url": ""
+            "url": "https://github.com/franzreitmayer/TextTool"
         },
         {
-            "name": "test3",
-            "type": "",
-            "description": "",
-            "url": ""
-        },
-        {
-            "name": "test",
-            "type": "",
-            "description": "",
-            "url": ""
-        },
-        {
-            "name": "test2",
-            "type": "",
-            "description": "",
-            "url": ""
-        },
-        {
-            "name": "test3",
-            "type": "",
-            "description": "",
-            "url": ""
-        },
-        {
-            "name": "test",
-            "type": "",
-            "description": "",
-            "url": ""
-        },
-        {
-            "name": "test2",
-            "type": "",
-            "description": "",
-            "url": ""
-        },
-        {
-            "name": "test3",
-            "type": "",
-            "description": "",
-            "url": ""
-        },
-        {
-            "name": "test",
-            "type": "",
-            "description": "",
-            "url": ""
-        },
-        {
-            "name": "test2",
-            "type": "",
-            "description": "",
-            "url": ""
-        },
-        {
-            "name": "test3",
-            "type": "",
-            "description": "",
-            "url": ""
+            "name": "ProxyBypass",
+            "types": [
+                {"type": "JS"}
+            ],
+            "description": "Bypassing Proxies",
+            "url": "https://github.com/franzreitmayer/proxyBypass"
         }
-
 
     ]
 }

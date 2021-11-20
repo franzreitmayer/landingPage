@@ -31,7 +31,11 @@ sap.ui.define([], function() {
                     {
                         return "../images/ts-logo-128.png";
                     }
-
+                    case "C#":
+                        {
+                            return "../images/csharp.svg.png";
+                        }
+    
 
 
 

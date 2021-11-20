@@ -19,8 +19,14 @@ sap.ui.define([
                 var oResourceBundle = this.getResourceBundle();
                 var sResourceBundleId = `profiles.${sSocialMediaId}.url`;
                 var sUrl = oResourceBundle.getText(sResourceBundleId);
-                var newTab = window.open();
-                newTab.location.href = sUrl;
+                var oNewTab = window.open();
+                oNewTab.location.href = sUrl;
+            },
+            onProjectPress: function(oEvent) {
+                var oContext = oEvent.getSource().getBindingContext();
+                var sUrl = oContext.getObject().url;
+                var oNewTab = window.open();
+                oNewTab.location.href = sUrl;
             }
         });
     });

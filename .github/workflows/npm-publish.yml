@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 14
       - name: "Build UI5"
-        run: npm run build:uimodule
+          run: npm run build:uimodule
   	  
 
 

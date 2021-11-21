@@ -27,11 +27,7 @@
 
                         </VBox>
                     </Panel>
-                    <!-- 
-                    <List items="{/projects}">
-                        <StandardListItem title="{name}" />
-                    </List>
-                    -->        
+      
                         <Panel headerText="{i18n>projectsPanel.headerText}">
                             <l:HorizontalLayout content="{/projects}" class="sapUiContentPadding" allowWrapping="true">
                             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{name}"  press="onProjectPress"

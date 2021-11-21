@@ -43,6 +43,10 @@ sap.ui.define([], function () {
                     {
                         return "../images/auth0.png";
                     }
+                case "HUGO":
+                    {
+                        return "../images/hugo.png";
+                    }
                 default: { // nop 
                 }
 

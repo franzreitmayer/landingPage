@@ -17,6 +17,16 @@
             "url": "http://texttable.aws.reitmayer.eu"
         },
         {
+            "name": "TextTable-site",
+            "types": [
+                {"type": "MD"},
+                {"type": "HUGO"},
+                {"type": "AWS"}
+            ],
+            "description": "product documentation",
+            "url": "https://github.com/franzreitmayer/texttable-documentation"
+        },
+        {
             "name": "Timetrack",
             "types": [
                 { "type": "AWS" },

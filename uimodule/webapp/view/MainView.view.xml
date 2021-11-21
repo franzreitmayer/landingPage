@@ -13,8 +13,8 @@
                 <f:DynamicPage id="page">
                     <f:content>
 
-                        <Panel headerText="Personal WebSite of Franz Reitmayer">
-                            <Panel headerText="Public profiles">
+                        <Panel headerText="{i18n>mainPanel.headerText}">
+                            <Panel headerText="{i18n>profilesPanel.headerText}">
                             <VBox class="sapUiResponsiveMargin" alignItems="Center">
 
 
@@ -27,12 +27,8 @@
 
                         </VBox>
                     </Panel>
-                    <!-- 
-                    <List items="{/projects}">
-                        <StandardListItem title="{name}" />
-                    </List>
-                    -->        
-                        <Panel headerText="Projects">
+      
+                        <Panel headerText="{i18n>projectsPanel.headerText}">
                             <l:HorizontalLayout content="{/projects}" class="sapUiContentPadding" allowWrapping="true">
                             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{name}"  press="onProjectPress"
                             subheader="{description}" url="{url}">
@@ -49,12 +45,12 @@
                         </l:HorizontalLayout>
                                 
                             </Panel>
-                            <Link text="Impressum" href="./impressum.html" />
+                            <Link text="{i18n>impressum}" href="./impressum.html" />
                         </Panel>
                         
                     </f:content>
                     <f:footer>
-                        <Link text="Impressum" href="./impressum.html" />
+                        <Link text="{i18n>impressum}" href="./impressum.html" />
                     </f:footer>
                 </f:DynamicPage>
             </pages>

@@ -1,6 +1,6 @@
 # landingPage
 
-Insert the purpose of this project and some interesting infos here
+Landing Page of my personal homepage. Created with easy-ui5 and openui5 library.
 
 ## Credits
 

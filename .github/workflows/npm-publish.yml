@@ -1,0 +1,37 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: Node.js Package
+
+on:
+  push:
+    branches:
+      - main
+      
+  pull_request:
+    branches:
+      - main
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Build UI5"
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: "Install ui5 command line tooling"
+        run: npm i -g @ui5/cli
+      - name: "Npm install"
+        run: npm i
+      - name: "Build"
+        run: npm run build:uimodule
+      - name: "Sync files"
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          local-dir: "./uimodule/dist/"
+          server: wp1155735.server-he.de
+          username: ${{ secrets.FTP_UPLOAD_USER }}
+          password: ${{ secrets.FTP_UPLOAD_PWD }}        

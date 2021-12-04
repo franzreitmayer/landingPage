@@ -28,6 +28,12 @@ sap.ui.define([
                 var sUrl = oContext.getObject().url;
                 var oNewTab = window.open();
                 oNewTab.location.href = sUrl;
+            },
+            onToolPress: function(oEvent) {
+                var oContext = oEvent.getSource().getBindingContext();
+                var sUrl = oContext.getObject().url;
+                var oNewTab = window.open();
+                oNewTab.location.href = sUrl;
             }
         });
     });

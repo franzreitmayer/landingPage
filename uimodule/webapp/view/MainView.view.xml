@@ -45,8 +45,26 @@
                         </l:HorizontalLayout>
                                 
                             </Panel>
+                        <Panel headerText="{i18n>toolsPanel.headerText}">
+                            <l:HorizontalLayout content="{/tools}" class="sapUiContentPadding" allowWrapping="true">
+                                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{name}"  press="onToolPress"
+                                    subheader="{description}" url="{url}">
+                                    <TileContent>
+                                    <l:HorizontalLayout content="{types}" allowWrapping="true" >
+                                    <Image width="2em" src="{
+                                        path: 'type',
+                                        formatter: '.formatter.projectTypeImageURL'
+                                    }" />
+                                </l:HorizontalLayout>
+                                </TileContent>                                
+                                
+                                </GenericTile>                            
+                            </l:HorizontalLayout>
+
+                        </Panel>
                             <Link text="{i18n>impressum}" href="./impressum.html" />
                         </Panel>
+
                         
                     </f:content>
                     <f:footer>

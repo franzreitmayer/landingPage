@@ -25,8 +25,8 @@ sap.ui.getCore().attachInit(function() {
       app: componentContainer,
       appWidthLimited: false
     });
-    var stylesheet = document.getElementById('animation');
-    stylesheet.parentNode.removeChild(stylesheet);
     
     shell.placeAt('content');
+    var stylesheet = document.getElementById('animation');
+    stylesheet.parentNode.removeChild(stylesheet);
   });

@@ -14,7 +14,6 @@ sap.ui.define([
 
             },
 
-            
             onSocialLink: function(oEvent) {
                 var sSocialMediaId = oEvent.getSource().data("id");
                 var oResourceBundle = this.getResourceBundle();
@@ -23,12 +22,14 @@ sap.ui.define([
                 var oNewTab = window.open();
                 oNewTab.location.href = sUrl;
             },
+
             onProjectPress: function(oEvent) {
                 var oContext = oEvent.getSource().getBindingContext();
                 var sUrl = oContext.getObject().url;
                 var oNewTab = window.open();
                 oNewTab.location.href = sUrl;
             },
+
             onToolPress: function(oEvent) {
                 var oContext = oEvent.getSource().getBindingContext();
                 var sUrl = oContext.getObject().url;

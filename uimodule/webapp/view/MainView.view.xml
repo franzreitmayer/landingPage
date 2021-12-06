@@ -13,7 +13,7 @@
                 <f:DynamicPage id="page">
                     <f:content>
 
-                        <Panel headerText="{i18n>mainPanel.headerText}">
+                        <Panel headerText="{i18n>mainPanel.headerText}" class="sapUiContentPadding" >
                             <Panel headerText="{i18n>profilesPanel.headerText}">
                             <VBox class="sapUiResponsiveMargin" alignItems="Center">
 

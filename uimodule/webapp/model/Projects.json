@@ -76,6 +76,15 @@
                 {"type": "JS"},
                 {"type": "UI5"}
             ]
+        },
+        {
+            "name": "UI5DateExample",
+            "description": "DateTime Sample on Pluncker",
+            "url": "https://plnkr.co/edit/SncDyoNeeELK5P6H?open=lib%2Fscript.js&preview",
+            "types": [
+                {"type": "JS"},
+                {"type": "UI5"}
+            ]
         }
     ]
 }

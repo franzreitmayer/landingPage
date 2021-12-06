@@ -31,7 +31,7 @@
                         <Panel headerText="{i18n>projectsPanel.headerText}">
                             <l:HorizontalLayout content="{/projects}" class="sapUiContentPadding" allowWrapping="true">
                             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{name}"  press="onProjectPress"
-                            subheader="{description}" url="{url}">
+                            subheader="{description}">
                                 <TileContent>
                                     <l:HorizontalLayout content="{types}" allowWrapping="true" >
                                     <Image width="2em" src="{
@@ -48,7 +48,7 @@
                         <Panel headerText="{i18n>toolsPanel.headerText}">
                             <l:HorizontalLayout content="{/tools}" class="sapUiContentPadding" allowWrapping="true">
                                 <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{name}"  press="onToolPress"
-                                    subheader="{description}" url="{url}">
+                                    subheader="{description}">
                                     <TileContent>
                                     <l:HorizontalLayout content="{types}" allowWrapping="true" >
                                     <Image width="2em" src="{

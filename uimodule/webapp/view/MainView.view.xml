@@ -13,7 +13,7 @@
                 <f:DynamicPage id="page">
                     <f:content>
 
-                        <Panel headerText="{i18n>mainPanel.headerText}">
+                        <Panel headerText="{i18n>mainPanel.headerText}" class="sapUiContentPadding" >
                             <Panel headerText="{i18n>profilesPanel.headerText}">
                             <VBox class="sapUiResponsiveMargin" alignItems="Center">
 
@@ -31,7 +31,7 @@
                         <Panel headerText="{i18n>projectsPanel.headerText}">
                             <l:HorizontalLayout content="{/projects}" class="sapUiContentPadding" allowWrapping="true">
                             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{name}"  press="onProjectPress"
-                            subheader="{description}" url="{url}">
+                            subheader="{description}">
                                 <TileContent>
                                     <l:HorizontalLayout content="{types}" allowWrapping="true" >
                                     <Image width="2em" src="{
@@ -45,8 +45,26 @@
                         </l:HorizontalLayout>
                                 
                             </Panel>
+                        <Panel headerText="{i18n>toolsPanel.headerText}">
+                            <l:HorizontalLayout content="{/tools}" class="sapUiContentPadding" allowWrapping="true">
+                                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{name}"  press="onToolPress"
+                                    subheader="{description}">
+                                    <TileContent>
+                                    <l:HorizontalLayout content="{types}" allowWrapping="true" >
+                                    <Image width="2em" src="{
+                                        path: 'type',
+                                        formatter: '.formatter.projectTypeImageURL'
+                                    }" />
+                                </l:HorizontalLayout>
+                                </TileContent>                                
+                                
+                                </GenericTile>                            
+                            </l:HorizontalLayout>
+
+                        </Panel>
                             <Link text="{i18n>impressum}" href="./impressum.html" />
                         </Panel>
+
                         
                     </f:content>
                     <f:footer>

@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Reitmayer.eu</title>
-    <style>
-        html, body, body > div, #container, #container-uiarea {
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <meta content="IE=edge"
+        http-equiv="X-UA-Compatible">
+  <title>Reitmayer.eu</title>
+  <style>
+        html,
+        body,
+        body>div,
+        #container,
+        #container-uiarea {
             height: 100%;
         }
-    </style>
-    <!-- css required for the loading screen css anumation -->
-  <link id="animation" rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script
-        id="sap-ui-bootstrap"
-        src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-        data-sap-ui-theme="sap_horizon"
-        data-sap-ui-resourceroots='{
-            "eu.reitmayer.ui5.landingPage": "./"
-        }'
-        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
-        data-sap-ui-compatVersion="edge"
+  </style><!-- css required for the loading screen css anumation -->
+  <link href="css/style.css"
+        id="animation"
+        rel="stylesheet"
+        type="text/css">
+  <script data-sap-ui-async="true"
+        data-sap-ui-compatversion="edge"
+        data-sap-ui-frameoptions="trusted"
         data-sap-ui-libs="sap.m"
-        data-sap-ui-async="true"
+        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
         data-sap-ui-preload="async"
-        data-sap-ui-frameOptions="trusted"
-    ></script>
-    <script type="text/javascript" src="index.js"></script>
+        data-sap-ui-resourceroots='{ "eu.reitmayer.ui5.landingPage": "./" }'
+        data-sap-ui-theme="sap_horizon"
+        id="sap-ui-bootstrap"
+        src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"></script>
+  <script src="index.js"
+        type="text/javascript"></script>
 </head>
+
 <body class="sapUiBody sapUiSizeCompact" id="content">
     <h2 id="busyIndicator" style="text-align: center; font-family: Sans, Arial; color:lightblue"><center>Loading UI5 Framework...<p>
         <div id="_busyIndicator" style="text-align: center; font-family: Sans, Arial; position: absolute; width:100%; display: block">
@@ -41,6 +47,7 @@
 
 </center></h2>
     <!-- 
+
     <div
         data-sap-ui-component
         data-name="eu.reitmayer.ui5.landingPage"

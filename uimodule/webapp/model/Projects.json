@@ -64,7 +64,17 @@
             ],
             "description": "Bypassing Proxies",
             "url": "https://github.com/franzreitmayer/proxyBypass"
+        },
+        {
+            "name": "UI5Conv",
+            "types": [
+                {"type": "JS"},
+                {"type": "AWS"}
+            ],
+            "description": "Convert date/time to odata format",
+            "url": "https://github.com/franzreitmayer/ui5datetounix"
         }
+
 
     ],
     "tools": [

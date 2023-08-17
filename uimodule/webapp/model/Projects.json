@@ -69,6 +69,7 @@
             "name": "UI5Conv",
             "types": [
                 {"type": "JS"},
+                {"type": "UI5"},
                 {"type": "AWS"}
             ],
             "description": "Convert date/time to odata format",
